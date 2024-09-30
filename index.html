@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Form</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="main">
+        <form>
+            <label for="firstname">First Name:</label>
+            <input type="text" name="name" id="firstname" autocomplete="username">
+
+            <label for="lastname">Last Name:</label>
+            <input type="text" name="name" id="lastname" autocomplete="username">
+
+            <label for="address">Address:</label>
+            <input type="text" name="address" id="address" autocomplete="address-level1">
+
+            <label for="cell">Mobile. No:</label>
+            <input type="number" name="number" id="cell" autocomplete="cc-number">
+
+            <label for="email">Email:</label>
+            <input type="email"  name="email" id="email" autocomplete="email">
+
+            <p>Password:</p>
+            <input type="password" name="password" id="pass"></input>
+
+            <button type="button" onclick="submit_form()">Submit</button>
+        </form>
+
+        <div class="form-table">
+            <table id="tablee">
+                <tbody>
+                    <tr>
+                        <th>First Name :</th>
+                        <td id="fname1"></td>
+                        <td id="fname2"></td>
+                        <td id="fname3"></td>
+                        <td id="fname4"></td>
+                    </tr>
+                    <tr>
+                        <th>Last Name :</th>
+                        <td id="lname1"></td>
+                        <td id="lname2"></td>
+                        <td id="lname3"></td>
+                        <td id="lname4"></td>
+                    </tr>
+                    <tr>
+                        <th>Address :</th>
+                        <td id="address1"></td>
+                        <td id="address2"></td>
+                        <td id="address3"></td>
+                        <td id="address4"></td>
+                    </tr>
+                    <tr>
+                        <th>Mobile No :</th>
+                        <td id="num1"></td>
+                        <td id="num2"></td>
+                        <td id="num3"></td>
+                        <td id="num4"></td>
+                    </tr>
+                    <tr>
+                        <th>Email Address :</th>
+                        <td id="email1"></td>
+                        <td id="email2"></td>
+                        <td id="email3"></td>
+                        <td id="email4"></td>
+                    </tr>
+                    <tr>
+                        <th>Password :</th>
+                        <td id="pass1"></td>
+                        <td id="pass2"></td>
+                        <td id="pass3"></td>
+                        <td id="pass4"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="./app.js"></script>
+</body>
+
+</html>
